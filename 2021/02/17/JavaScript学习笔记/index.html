@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      553 字
+      554 字
     </span>
   
 
@@ -264,17 +264,22 @@
 <li>以字符串的形式返回类型名称，例如 <code>&quot;string&quot;</code>。</li>
 <li><code>typeof null</code> 会返回 <code>&quot;object&quot;</code> —— 这是 JavaScript 编程语言的一个错误，实际上它并不是一个 <code>object</code>。</li>
 </ul>
-<h4 id="4-交互"><a href="#4-交互" class="headerlink" title="4.交互"></a>4.交互</h4><p>用户交互的 3 个浏览器的特定函数：<br><strong>alert</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">alert(<span class="hljs-string">&#x27;Hello!&#x27;</span>); <span class="hljs-comment">//显示信息。</span><br></code></pre></div></td></tr></table></figure>
-<p><strong>prompt</strong><br><code>prompt</code> 函数接收两个参数：</p>
-<figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">result = prompt(title, [<span class="hljs-keyword">default</span>]); <br></code></pre></div></td></tr></table></figure>
-<p>显示信息要求用户输入文本。<br><code>title</code></p>
-<p>显示给用户的文本(可选)<br><code>default</code></p>
-<p>点击确定返回文本，点击取消或按下 Esc 键返回 null。</p>
-<p><strong>confirm</strong></p>
-<p><code>confirm</code> 函数显示一个带有 <code>question</code> 以及确定和取消两个按钮的模态窗口。</p>
-<figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">result = confirm(question);<br></code></pre></div></td></tr></table></figure>
-<p>点击确定返回 <code>true</code>，点击取消返回 <code>false</code>。</p>
+<h4 id="4-交互"><a href="#4-交互" class="headerlink" title="4.交互"></a>4.交互</h4><p>用户交互的 3 个浏览器的特定函数：</p>
+<ul>
+<li><p><strong>alert</strong></p>
+  <figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">alert(<span class="hljs-string">&#x27;Hello!&#x27;</span>); <span class="hljs-comment">//显示信息。</span><br></code></pre></div></td></tr></table></figure></li>
+<li><p><strong>prompt</strong><br>  <code>prompt</code> 函数接收两个参数：</p>
+  <figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">result = prompt(title, [<span class="hljs-keyword">default</span>]); <br></code></pre></div></td></tr></table></figure>
+<p>  显示信息要求用户输入文本。<br>  <code>title</code></p>
+<p>  显示给用户的文本(可选)<br>  <code>default</code></p>
+<p>  点击确定返回文本，点击取消或按下 Esc 键返回 null。</p>
+</li>
+<li><p><strong>confirm</strong></p>
+<p>  <code>confirm</code> 函数显示一个带有 <code>question</code> 以及确定和取消两个按钮的模态窗口。  </p>
+  <figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">result = confirm(question);<br></code></pre></div></td></tr></table></figure>
+<p>  点击确定返回 <code>true</code>，点击取消返回 <code>false</code>。</p>
+</li>
+</ul>
 
             </div>
             <hr>
