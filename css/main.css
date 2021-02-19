@@ -12,7 +12,7 @@
   background-color: rgba(0,0,0,0.3);
 }
 .banner .page-header {
-  color: #fff;
+  color: #4c4c4c;
   max-width: calc(960px - 6rem);
   width: 80%;
 }
@@ -340,7 +340,7 @@ img[srcset] {
 }
 :root {
   --color-mode: 'light';
-  --body-bg-color: #eee;
+  --body-bg-color: #FFFFFF;
   --board-bg-color: #fff;
   --text-color: #3c4858;
   --sec-text-color: #718096;
@@ -349,8 +349,8 @@ img[srcset] {
   --post-link-color: #0366d6;
   --link-hover-color: #30a9de;
   --link-hover-bg-color: #f8f9fa;
-  --navbar-bg-color: #2f4154;
-  --navbar-text-color: #fff;
+  --navbar-bg-color: #F8F8FF;
+  --navbar-text-color: #4c4c4c;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -743,11 +743,12 @@ img[srcset] {
 }
 .navbar {
   background-color: transparent;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  -webkit-box-shadow: 0 2px 25px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .navbar .navbar-brand {
+  font-size: 1.8rem;
   color: var(--navbar-text-color);
 }
 .navbar .navbar-toggler .animated-icon span {
@@ -763,7 +764,7 @@ img[srcset] {
   background-color: rgba(0,0,0,0.1);
 }
 .navbar .nav-item .nav-link i {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 .navbar .navbar-toggler {
   border-width: 0;
@@ -776,8 +777,8 @@ img[srcset] {
 }
 @media (min-width: 600px) {
   .navbar.scrolling-navbar {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
   .navbar.scrolling-navbar .navbar-nav > li {
     -webkit-transition-duration: 1s;
@@ -884,7 +885,7 @@ img[srcset] {
   .navbar .dropdown-collapse,
   .top-nav-collapse,
   .navbar-col-show {
-    background: rgba(47,65,84,0.7);
+    background: rgba(248,248,255,0.7);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
   }
@@ -893,7 +894,7 @@ img[srcset] {
   .navbar .dropdown-collapse,
   .top-nav-collapse,
   .navbar-col-show {
-    background: #2f4154;
+    background: #f8f8ff;
   }
 }
 @media (max-width: 767px) {
