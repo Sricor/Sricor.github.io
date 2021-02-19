@@ -743,12 +743,12 @@ img[srcset] {
 }
 .navbar {
   background-color: transparent;
-  font-size: 1.25rem;
+  font-size: 62.5%;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   -webkit-box-shadow: 0 2px 25px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .navbar .navbar-brand {
-  font-size: 1.8rem;
+  font-size: 1.25rme;
   color: var(--navbar-text-color);
 }
 .navbar .navbar-toggler .animated-icon span {
