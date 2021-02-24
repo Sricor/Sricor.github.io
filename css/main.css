@@ -243,7 +243,7 @@ sup > a::before,
   display: inline-block;
   position: relative;
   padding-top: 2rem;
-  color: #fff;
+  color: #000;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
