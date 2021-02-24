@@ -19,7 +19,7 @@
   <meta name="description" content="">
   <meta name="author" content="Sricor">
   <meta name="keywords" content="">
-  <title>JavaScript学习笔记 - Sricor&#39;s Blog</title>
+  <title>iOS Design Themes - Sricor&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -152,7 +152,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="JavaScript学习笔记">
+            <span class="h2" id="subtitle" title="iOS Design Themes">
               
             </span>
 
@@ -167,8 +167,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-02-17 20:46" pubdate>
-        2021年2月17日 晚上
+      <time datetime="2021-02-24 20:07" pubdate>
+        2021年2月24日 晚上
       </time>
     </span>
   
@@ -179,7 +179,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      669 字
+      1.6k 字
     </span>
   
 
@@ -189,7 +189,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      7
+      21
        分钟
     </span>
   
@@ -219,64 +219,83 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">JavaScript学习笔记</h1>
+            <h1 style="display: none">iOS Design Themes</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年2月18日 晚上
+                  本文最后更新于：2021年2月24日 晚上
                 
               </p>
             
             <div class="markdown-body">
-              <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>专注于语言本身。  </p>
-<p>每天都会有收获。  </p>
-<p>本着兴趣爱好踏入的领域。  </p>
-<p>我将会在这里记录我的JavaScript学习历程，途中的困难，解决的办法和得到的收获。  </p>
-<p>我先会完成本日部分学习之后，再进行梳理与总结。</p>
-<hr>
-<h1 id="1JavaScript基础知识"><a href="#1JavaScript基础知识" class="headerlink" title="1JavaScript基础知识"></a>1JavaScript基础知识</h1><h2 id="1-1现代模式，”use-strict”"><a href="#1-1现代模式，”use-strict”" class="headerlink" title="1.1现代模式，”use strict”"></a>1.1现代模式，”use strict”</h2><h2 id="1-2变量"><a href="#1-2变量" class="headerlink" title="1.2变量"></a>1.2变量</h2><p>变量应当以一种容易理解变量内部是什么的方式进行命名。</p>
-<p>使用 <code>var</code>、<code>let</code> 或 <code>const</code> 声明变量来存储数据。</p>
-<ul>
-<li><code>let</code> — 现代的变量声明方式。</li>
-<li><code>var</code> — 老旧的变量声明方式。</li>
-<li><code>const</code> — 类似于 <code>let</code>，但是变量的值无法被修改。  </li>
+              <h1 id="iOS设计主旨-amp-六大设计原则"><a href="#iOS设计主旨-amp-六大设计原则" class="headerlink" title="iOS设计主旨&amp;六大设计原则"></a>iOS设计主旨&amp;六大设计原则</h1><blockquote>
+<p>As an app designer, you have the opportunity to deliver an extraordinary product that rises to the top of the App Store charts. To do so, you’ll need to meet high expectations for quality and functionality.</p>
+</blockquote>
+<p>以下仅代表个人翻译整理得到的理解与看法。</p>
+<h2 id="iOS-Design-Themes-iOS设计主旨"><a href="#iOS-Design-Themes-iOS设计主旨" class="headerlink" title="iOS Design Themes (iOS设计主旨)"></a>iOS Design Themes (iOS设计主旨)</h2><ul>
+<li><h3 id="Clarity-清晰"><a href="#Clarity-清晰" class="headerlink" title="Clarity (清晰)"></a>Clarity (清晰)</h3></li>
 </ul>
-<h2 id="1-3数据类型"><a href="#1-3数据类型" class="headerlink" title="1.3数据类型"></a>1.3数据类型</h2><p>JavaScript 中有八种基本的数据类型，前七种为基本数据类型，也称为原始类型，而 <code>object</code> 为复杂数据类型</p>
+<p>遍历整个系统，文字在各种尺寸上都<strong>清晰可辨</strong>；<br>图标精确而清晰，装饰巧妙且恰当，并且对<strong>功能</strong>的敏锐关注激发了设计；<br>负空间，颜色，字体，图形和界面元素巧妙地突出<strong>重要内容</strong>并传达<strong>交互性</strong>。</p>
+<blockquote>
+<p>原：Throughout the system, text is legible at every size, icons are precise and lucid, adornments are subtle and appropriate, and a sharpened focus on functionality motivates the design. Negative space, color, fonts, graphics, and interface elements subtly highlight important content and convey interactivity.</p>
+</blockquote>
 <ul>
-<li><strong><code>number</code></strong> 用于任何类型的数字：整数或浮点数，在 ±(253-1) 范围内的整数。</li>
-<li><strong><code>bigint</code></strong> 用于任意长度的整数。</li>
-<li><strong><code>string</code></strong> 用于字符串：一个字符串可以包含 0 个或多个字符，所以没有单独的单字符类型。</li>
-<li><strong><code>boolean</code></strong> 用于 <code>true</code> 和 <code>false</code>。</li>
-<li><strong><code>null</code></strong> 用于未知的值 —— 只有一个 <code>null</code> 值的独立类型。</li>
-<li><strong><code>undefined</code></strong> 用于未定义的值 —— 只有一个 <code>undefined</code> 值的独立类型。</li>
-<li><strong><code>symbol</code></strong> 用于唯一的标识符。</li>
-<li><strong><code>object</code></strong> 用于更复杂的数据结构。    </li>
+<li><h3 id="Deference-遵从"><a href="#Deference-遵从" class="headerlink" title="Deference (遵从)"></a>Deference (遵从)</h3></li>
 </ul>
-<p>可以通过 <code>typeof</code> 运算符查看存储在变量中的数据类型。</p>
+<p><strong>流畅的动作</strong>和<strong>简洁优美的界面</strong>可以帮助人们理解和互动内容，而不会与之竞争(矛盾)；<br>内容通常填充整个屏幕，而半透明和模糊通常暗示更多；<br>对边框、渐变和阴影的最小使用使界面保持明亮和通透，同时<strong>确保内容</strong>是最重要的。</p>
+<blockquote>
+<p>原：Fluid motion and a crisp, beautiful interface help people understand and interact with content while never competing with it. Content typically fills the entire screen, while translucency and blurring often hint at more. Minimal use of bezels, gradients, and drop shadows keep the interface light and airy, while ensuring that content is paramount.</p>
+</blockquote>
 <ul>
-<li>两种形式：<code>typeof x</code> 或者 <code>typeof(x)</code>。</li>
-<li>以字符串的形式返回类型名称，例如 <code>&quot;string&quot;</code>。</li>
-<li><code>typeof null</code> 会返回 <code>&quot;object&quot;</code> —— 这是 JavaScript 编程语言的一个错误，实际上它并不是一个 <code>object</code>。</li>
+<li><h3 id="Depth-深度-层次感"><a href="#Depth-深度-层次感" class="headerlink" title="Depth (深度/层次感)"></a>Depth (深度/层次感)</h3></li>
 </ul>
-<h2 id="1-4交互"><a href="#1-4交互" class="headerlink" title="1.4交互"></a>1.4交互</h2><p>用户交互的 3 个浏览器的特定函数：</p>
+<p>独特的<strong>视觉层次</strong>和现实的运动传达层次，赋予活力，促进理解;<br>触摸和可发现性增强了愉悦感，并且能够在不丢失上下文的情况下访问功能和附加内容;<br>在浏览内容时，<strong>过渡</strong>提供了一种深度感。<br><em>(稍微有点难以理解深度层次感)</em></p>
+<blockquote>
+<p>原：Distinct visual layers and realistic motion convey hierarchy, impart vitality, and facilitate understanding. Touch and discoverability heighten delight and enable access to functionality and additional content without losing context. Transitions provide a sense of depth as you navigate through content.</p>
+</blockquote>
+<h2 id="Design-Principles-设计原则"><a href="#Design-Principles-设计原则" class="headerlink" title="Design Principles (设计原则)"></a>Design Principles (设计原则)</h2><ul>
+<li><h3 id="Aesthetic-Integrity-审美完整性"><a href="#Aesthetic-Integrity-审美完整性" class="headerlink" title="Aesthetic Integrity (审美完整性)"></a>Aesthetic Integrity (审美完整性)</h3></li>
+</ul>
+<p>审美完整性体现了app的外观和行为与其功能的整合程度;<br>例如，一个帮助用户执行严肃任务的app可以通过使用微妙、不显眼的图形、标准控件和可预测的行为来保持他们的专注;<br>另一方面，沉浸式app，如游戏，可以提供吸引人的外观，传递乐趣和刺激感，同时鼓励发现。</p>
+<blockquote>
+<p>原：Aesthetic integrity represents how well an app’s appearance and behavior integrate with its function. For example, an app that helps people perform a serious task can keep them focused by using subtle, unobtrusive graphics, standard controls, and predictable behaviors. On the other hand, an immersive app, such as a game, can deliver a captivating appearance that promises fun and excitement, while encouraging discovery.</p>
+</blockquote>
 <ul>
-<li><p><strong>alert</strong></p>
-  <figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">alert(<span class="hljs-string">&#x27;Hello!&#x27;</span>); <span class="hljs-comment">//显示信息。</span><br></code></pre></div></td></tr></table></figure></li>
-<li><p><strong>prompt</strong><br>  <code>prompt</code> 函数接收两个参数：</p>
-  <figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">result = prompt(title, [<span class="hljs-keyword">default</span>]); <br></code></pre></div></td></tr></table></figure>
-<p>  显示信息要求用户输入文本。<br>  <code>title</code></p>
-<p>  显示给用户的文本(可选)<br>  <code>default</code></p>
-<p>  点击确定返回文本，点击取消或按下 Esc 键返回 null。</p>
-</li>
-<li><p><strong>confirm</strong></p>
-<p>  <code>confirm</code> 函数显示一个带有 <code>question</code> 以及确定和取消两个按钮的模态窗口。  </p>
-  <figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">result = confirm(question);<br></code></pre></div></td></tr></table></figure>
-<p>  点击确定返回 <code>true</code>，点击取消返回 <code>false</code>。  </p>
-</li>
+<li><h3 id="Consistency-一致性-统一性"><a href="#Consistency-一致性-统一性" class="headerlink" title="Consistency (一致性/统一性)"></a>Consistency (一致性/统一性)</h3></li>
 </ul>
-<h2 id="1-5类型转换"><a href="#1-5类型转换" class="headerlink" title="1.5类型转换"></a>1.5类型转换</h2><p><strong>字符串转换</strong> —— 转换发生在输出内容的时候，也可以通过 <code>String(value)</code> 进行显式转换。原始类型值的 string 类型转换通常是很明显的。</p>
-<p><strong>数字型转换</strong> —— 转换发生在进行算术操作时，也可以通过 <code>Number(value)</code> 进行显式转换。</p>
-<p><strong>布尔型转换</strong> —— 转换发生在进行逻辑操作时，也可以通过 <code>Boolean(value)</code> 进行显式转换。</p>
+<p>一个具有一致性的app通过使用系统提供的界面元素、熟悉的图标、标准的文字样式、统一的术语执行为人熟知的标准和样式;<br>这种app符合用户期望的特征和行为。<br><em>(界面元素，图标，文字排版相互适应统一)</em></p>
+<blockquote>
+<p>原：A consistent app implements familiar standards and paradigms by using system-provided interface elements, well-known icons, standard text styles, and uniform terminology. The app incorporates features and behaviors in ways people expect.</p>
+</blockquote>
+<ul>
+<li><h3 id="Direct-Manipulation-直接操作"><a href="#Direct-Manipulation-直接操作" class="headerlink" title="Direct Manipulation (直接操作)"></a>Direct Manipulation (直接操作)</h3></li>
+</ul>
+<p>直接操作屏幕内容可以让人们更容易理解。当用户旋转设备或使用手势来影响屏幕内容时，用户就会体验到直接操作;<br>通过直接操纵，他们可以看到他们行动的直接、可见的结果。</p>
+<blockquote>
+<p>原：The direct manipulation of onscreen content engages people and facilitates understanding. Users experience direct manipulation when they rotate the device or use gestures to affect onscreen content. Through direct manipulation, they can see the immediate, visible results of their actions.</p>
+</blockquote>
+<ul>
+<li><h3 id="Feedback-反馈"><a href="#Feedback-反馈" class="headerlink" title="Feedback (反馈)"></a>Feedback (反馈)</h3></li>
+</ul>
+<p>反馈对用户的行动进行了确认，并显示行动结果以使用户了解情况;<br>内置的iOS app为用户的每一项操作提供可感知的反馈;<br>轻触时会突出显示交互元素；进度指示器会传达长时间运行的项目的状态；动画和音效有助于阐明操作的结果。<br><em>(触控感知反馈与用户进行交互，可让用户了解作出动作后的状态)</em></p>
+<blockquote>
+<p>原：Feedback acknowledges actions and shows results to keep people informed. The built-in iOS apps provide perceptible feedback in response to every user action. Interactive elements are highlighted briefly when tapped, progress indicators communicate the status of long-running operations, and animation and sound help clarify the results of actions.</p>
+</blockquote>
+<ul>
+<li><h3 id="Metaphors-隐喻"><a href="#Metaphors-隐喻" class="headerlink" title="Metaphors (隐喻)"></a>Metaphors (隐喻)</h3></li>
+</ul>
+<p>当一个app的虚拟对象和动作都是对熟悉事物的隐喻时（不管基于现实世界还是数字世界），用户学习的更快;<br>隐喻在iOS系统中发挥的很好，因为用户是直接与屏幕产生物理交互的;<br>用户移动视图来查看更多的内容；拖拽内容；切换开关、移动滑块并且直接滚动来选取值；甚至可以像翻书或杂志一样轻快翻页。<br><em>(个人理解为可操控位置隐喻。)</em></p>
+<blockquote>
+<p>原：People learn more quickly when an app’s virtual objects and actions are metaphors for familiar experiences—whether rooted in the real or digital world. Metaphors work well in iOS because people physically interact with the screen. They move views out of the way to expose content beneath. They drag and swipe content. They toggle switches, move sliders, and scroll through picker values. They even flick through pages of books and magazines.</p>
+</blockquote>
+<ul>
+<li><h3 id="User-Control-用户控制"><a href="#User-Control-用户控制" class="headerlink" title="User Control (用户控制)"></a>User Control (用户控制)</h3></li>
+</ul>
+<p>在整个iOS中，<strong>用户</strong>是掌控者，而不是app;<br>app可以建议一个行动方案或警告危险后果，但app接管决策通常是一个错误;<br>好的app可以在用户授权和避免不必要的结果之间找到正确的平衡;<br>app可以通过<strong>保持交互元素熟悉</strong>和可预测，确认破坏性操作以及轻松取消操作（即使它们已经在进行中）来使用户感觉自己在控制。</p>
+<blockquote>
+<p>原：Throughout iOS, people—not apps—are in control. An app can suggest a course of action or warn about dangerous consequences, but it’s usually a mistake for the app to take over the decision-making. The best apps find the correct balance between enabling users and avoiding unwanted outcomes. An app can make people feel like they’re in control by keeping interactive elements familiar and predictable, confirming destructive actions, and making it easy to cancel operations, even when they’re already underway.</p>
+</blockquote>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>本文译自Apple官方发布的人机交互指南 <a target="_blank" rel="noopener" href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/">Human Interface Guidelines（HIG）</a><br>官方文档翻译和理解起来稍微有些难度，一些专业名词术语不是很清晰。<br>需继续完善与学习。</p>
 
             </div>
             <hr>
@@ -287,7 +306,9 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/JavaScript/">JavaScript</a>
+                      <a class="hover-with-bg" href="/tags/iOS/">iOS</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Design/">Design</a>
                     
                   </div>
                 
